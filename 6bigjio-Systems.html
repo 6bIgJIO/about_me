@@ -899,16 +899,31 @@ footer {
 <!-- MANIFESTO -->
 <section class="manifesto reveal">
   <div class="manifesto-num">01</div>
-  <div class="section-tag">Philosophy</div>
-  <p>Most software is a wrapper around a wrapper around a bad API decision from 2009.
-  I don't do that. I go <strong>directly to the system</strong> — COM interfaces, undocumented Windows internals,
-  vtable probing when the documentation doesn't exist.</p>
-  <p>I build things that <strong>shouldn't need to exist</strong> — because Windows should do it natively,
-  but doesn't. Every product starts with a <span class="acid">real problem</span> someone is hitting daily,
-  not a feature list someone thought would be cool.</p>
-  <p>The architecture is always the same: a <strong>lean C++ core</strong> that owns the system layer,
-  a thin bridge to whatever UI the platform needs, and <span class="acid">zero Electron.</span></p>
-</section>
+<div class="section-tag">Philosophy</div>
+
+<p>
+  Most software is a wrapper around a wrapper around a bad API decision from 2009.
+  I try to avoid that whenever the platform allows it.
+</p>
+
+<p>
+  I work <strong>close to the system layer</strong> — COM interfaces,
+  Windows audio internals, native event pipelines, low-level device orchestration,
+  and the parts of the platform most applications never touch directly.
+</p>
+
+<p>
+  Every product starts from a <span class="acid">real operational problem</span>,
+  not a feature checklist. I build tools that
+  <strong>should probably exist natively in Windows</strong>, but don't.
+</p>
+
+<p>
+  The architecture is usually the same:
+  a <strong>native C++ core</strong> responsible for the system layer
+  and performance-critical logic, with a thin orchestration/UI layer on top
+  when the platform needs one.
+</p>
 
 <!-- SKILLS -->
 <div class="skills">
